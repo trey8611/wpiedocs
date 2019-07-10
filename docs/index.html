@@ -18,7 +18,10 @@
     window.$docsify = {
       el: '#main',
       loadSidebar: true,
-      subMaxLevel: 2,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      subMaxLevel: 3,
       auto2top: true,
       themeable: {
           readyTransition : true, // default
